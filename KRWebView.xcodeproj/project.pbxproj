@@ -17,6 +17,14 @@
 		2D8DD8D41FC2B63900824C8E /* WKWebViewHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8DD8D31FC2B63900824C8E /* WKWebViewHandling.swift */; };
 		2D8DD8D61FC2D38A00824C8E /* sample.html in Resources */ = {isa = PBXBuildFile; fileRef = 2D8DD8D51FC2D38A00824C8E /* sample.html */; };
 		2D8DD8DF1FC30C7200824C8E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8DD8DE1FC30C7200824C8E /* Constants.swift */; };
+		7C332E822ADEB59500749A8B /* OnceToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C332E812ADEB59500749A8B /* OnceToken.swift */; };
+		7C57771F2AE109A300194F01 /* SingleFlutterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C57771E2AE109A300194F01 /* SingleFlutterViewController.swift */; };
+		7C5777212AE10B7000194F01 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5777202AE10B7000194F01 /* DataModel.swift */; };
+		7C5777232AE10C5E00194F01 /* DoubleFlutterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5777222AE10C5E00194F01 /* DoubleFlutterViewController.swift */; };
+		7C5777252AE10FC700194F01 /* HostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5777242AE10FC700194F01 /* HostViewController.swift */; };
+		7C5777272AE1373200194F01 /* BoostAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5777262AE1373200194F01 /* BoostAppDelegate.swift */; };
+		7C5777292AE137C800194F01 /* BoostDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5777282AE137C800194F01 /* BoostDelegate.swift */; };
+		7C57772B2AE1394100194F01 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C57772A2AE1394100194F01 /* HomeViewController.swift */; };
 		D1373BB60BDB492C8448F2AB /* Pods_KRWebView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1452670162ACB38762AE655 /* Pods_KRWebView.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +42,14 @@
 		2D8DD8D51FC2D38A00824C8E /* sample.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = sample.html; sourceTree = "<group>"; };
 		2D8DD8DE1FC30C7200824C8E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7064E8DFB6C1A4E2A0C7545C /* Pods-KRWebView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KRWebView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KRWebView/Pods-KRWebView.debug.xcconfig"; sourceTree = "<group>"; };
+		7C332E812ADEB59500749A8B /* OnceToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnceToken.swift; sourceTree = "<group>"; };
+		7C57771E2AE109A300194F01 /* SingleFlutterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFlutterViewController.swift; sourceTree = "<group>"; };
+		7C5777202AE10B7000194F01 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		7C5777222AE10C5E00194F01 /* DoubleFlutterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleFlutterViewController.swift; sourceTree = "<group>"; };
+		7C5777242AE10FC700194F01 /* HostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostViewController.swift; sourceTree = "<group>"; };
+		7C5777262AE1373200194F01 /* BoostAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoostAppDelegate.swift; sourceTree = "<group>"; };
+		7C5777282AE137C800194F01 /* BoostDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoostDelegate.swift; sourceTree = "<group>"; };
+		7C57772A2AE1394100194F01 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B57F813E2DC441600BAA054B /* Pods-KRWebView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KRWebView.release.xcconfig"; path = "Pods/Target Support Files/Pods-KRWebView/Pods-KRWebView.release.xcconfig"; sourceTree = "<group>"; };
 		F1452670162ACB38762AE655 /* Pods_KRWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KRWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -82,6 +98,14 @@
 				2D8DD8D51FC2D38A00824C8E /* sample.html */,
 				2D8DD8DE1FC30C7200824C8E /* Constants.swift */,
 				2D2EA8111FC88908007E29A5 /* ImagePicker.swift */,
+				7C332E812ADEB59500749A8B /* OnceToken.swift */,
+				7C57771E2AE109A300194F01 /* SingleFlutterViewController.swift */,
+				7C5777202AE10B7000194F01 /* DataModel.swift */,
+				7C5777222AE10C5E00194F01 /* DoubleFlutterViewController.swift */,
+				7C5777242AE10FC700194F01 /* HostViewController.swift */,
+				7C5777262AE1373200194F01 /* BoostAppDelegate.swift */,
+				7C5777282AE137C800194F01 /* BoostDelegate.swift */,
+				7C57772A2AE1394100194F01 /* HomeViewController.swift */,
 			);
 			path = KRWebView;
 			sourceTree = "<group>";
@@ -111,11 +135,12 @@
 			buildConfigurationList = 2D8DD8CE1FC2B51B00824C8E /* Build configuration list for PBXNativeTarget "KRWebView" */;
 			buildPhases = (
 				BEF4CF3483F7EA83C7B751C9 /* [CP] Check Pods Manifest.lock */,
+				2D3B8EBEDAEB6D4277736EB0 /* [CP-User] Run Flutter Build flutter_module_umbrella Script */,
 				2D8DD8B81FC2B51B00824C8E /* Sources */,
 				2D8DD8B91FC2B51B00824C8E /* Frameworks */,
 				2D8DD8BA1FC2B51B00824C8E /* Resources */,
 				8CBAC14121E531D9EE3F7613 /* [CP] Embed Pods Frameworks */,
-				02E3C2CCCCD905534A4A98F6 /* [CP] Copy Pods Resources */,
+				1404F82B0E33EF7FF6FEDDFA /* [CP-User] Embed Flutter Build flutter_module_umbrella Script */,
 			);
 			buildRules = (
 			);
@@ -175,20 +200,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		02E3C2CCCCD905534A4A98F6 /* [CP] Copy Pods Resources */ = {
+		1404F82B0E33EF7FF6FEDDFA /* [CP-User] Embed Flutter Build flutter_module_umbrella Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
+			name = "[CP-User] Embed Flutter Build flutter_module_umbrella Script";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KRWebView/Pods-KRWebView-resources.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../../FlutterDemo/flutter_module_umbrella/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh embed_and_thin";
+		};
+		2D3B8EBEDAEB6D4277736EB0 /* [CP-User] Run Flutter Build flutter_module_umbrella Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Run Flutter Build flutter_module_umbrella Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../../FlutterDemo/flutter_module_umbrella/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
 		};
 		8CBAC14121E531D9EE3F7613 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -196,16 +226,38 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-KRWebView/Pods-KRWebView-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-KRWebView/Pods-KRWebView-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AppSwizzle/AppSwizzle.framework",
+				"${BUILT_PRODUCTS_DIR}/MMKV/MMKV.framework",
+				"${BUILT_PRODUCTS_DIR}/MMKVCore/MMKVCore.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/flutter_boost/flutter_boost.framework",
+				"${BUILT_PRODUCTS_DIR}/mmkvflutter/mmkvflutter.framework",
+				"${BUILT_PRODUCTS_DIR}/path_provider_foundation/path_provider_foundation.framework",
+				"${BUILT_PRODUCTS_DIR}/url_launcher_ios/url_launcher_ios.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppSwizzle.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMKV.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMKVCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/flutter_boost.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/mmkvflutter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/path_provider_foundation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/url_launcher_ios.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KRWebView/Pods-KRWebView-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KRWebView/Pods-KRWebView-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BEF4CF3483F7EA83C7B751C9 /* [CP] Check Pods Manifest.lock */ = {
@@ -233,12 +285,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C5777252AE10FC700194F01 /* HostViewController.swift in Sources */,
+				7C332E822ADEB59500749A8B /* OnceToken.swift in Sources */,
+				7C57771F2AE109A300194F01 /* SingleFlutterViewController.swift in Sources */,
+				7C5777232AE10C5E00194F01 /* DoubleFlutterViewController.swift in Sources */,
 				2D8DD8DF1FC30C7200824C8E /* Constants.swift in Sources */,
+				7C57772B2AE1394100194F01 /* HomeViewController.swift in Sources */,
 				2D8DD8C21FC2B51B00824C8E /* ViewController.swift in Sources */,
 				2D8DD8C01FC2B51B00824C8E /* AppDelegate.swift in Sources */,
 				2D2EA8121FC88908007E29A5 /* ImagePicker.swift in Sources */,
+				7C5777272AE1373200194F01 /* BoostAppDelegate.swift in Sources */,
 				2D8DD8D41FC2B63900824C8E /* WKWebViewHandling.swift in Sources */,
 				2D8DD8D21FC2B5C800824C8E /* UIWebViewHandling.swift in Sources */,
+				7C5777212AE10B7000194F01 /* DataModel.swift in Sources */,
+				7C5777292AE137C800194F01 /* BoostDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +439,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7TD42S7LLX;
 				INFOPLIST_FILE = KRWebView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kr.webview.KRWebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -396,7 +456,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7TD42S7LLX;
 				INFOPLIST_FILE = KRWebView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kr.webview.KRWebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";

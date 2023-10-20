@@ -1,12 +1,88 @@
 PODS:
-  - Alamofire (4.5.1)
+  - Alamofire (4.9.1)
+  - AppSwizzle (1.3.1)
+  - Flutter (1.0.0)
+  - flutter_boost (0.0.2):
+    - Flutter
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
+    - flutter_boost
+    - mmkvflutter
+    - path_provider_foundation
+    - url_launcher_ios
+  - MMKV (1.3.1):
+    - MMKVCore (~> 1.3.1)
+  - MMKVCore (1.3.1)
+  - mmkvflutter (1.3.1):
+    - Flutter
+    - MMKV (>= 1.3.1)
+  - path_provider_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - RxCocoa (6.6.0):
+    - RxRelay (= 6.6.0)
+    - RxSwift (= 6.6.0)
+  - RxRelay (6.6.0):
+    - RxSwift (= 6.6.0)
+  - RxSwift (6.6.0)
+  - SnapKit (5.6.0)
+  - url_launcher_ios (0.0.1):
+    - Flutter
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
+  - AppSwizzle
+  - Flutter (from `../../FlutterDemo/flutter_module_umbrella/.ios/Flutter`)
+  - flutter_boost (from `../../FlutterDemo/flutter_module_umbrella/.ios/.symlinks/plugins/flutter_boost/ios`)
+  - FlutterPluginRegistrant (from `../../FlutterDemo/flutter_module_umbrella/.ios/Flutter/FlutterPluginRegistrant`)
+  - mmkvflutter (from `../../FlutterDemo/flutter_module_umbrella/.ios/.symlinks/plugins/mmkvflutter/ios`)
+  - path_provider_foundation (from `../../FlutterDemo/flutter_module_umbrella/.ios/.symlinks/plugins/path_provider_foundation/darwin`)
+  - RxCocoa (= 6.6.0)
+  - RxSwift (= 6.6.0)
+  - SnapKit
+  - url_launcher_ios (from `../../FlutterDemo/flutter_module_umbrella/.ios/.symlinks/plugins/url_launcher_ios/ios`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - AppSwizzle
+    - MMKV
+    - MMKVCore
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SnapKit
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: "../../FlutterDemo/flutter_module_umbrella/.ios/Flutter"
+  flutter_boost:
+    :path: "../../FlutterDemo/flutter_module_umbrella/.ios/.symlinks/plugins/flutter_boost/ios"
+  FlutterPluginRegistrant:
+    :path: "../../FlutterDemo/flutter_module_umbrella/.ios/Flutter/FlutterPluginRegistrant"
+  mmkvflutter:
+    :path: "../../FlutterDemo/flutter_module_umbrella/.ios/.symlinks/plugins/mmkvflutter/ios"
+  path_provider_foundation:
+    :path: "../../FlutterDemo/flutter_module_umbrella/.ios/.symlinks/plugins/path_provider_foundation/darwin"
+  url_launcher_ios:
+    :path: "../../FlutterDemo/flutter_module_umbrella/.ios/.symlinks/plugins/url_launcher_ios/ios"
 
 SPEC CHECKSUMS:
-  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AppSwizzle: db36e436f56110d93e5ae0147683435df593cabc
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  flutter_boost: 3e8a6e28c86d24c83be5b2fab067746dc77a1ad6
+  FlutterPluginRegistrant: 3ef16eec2b6a9510293ffda0a2483e8c21e8448b
+  MMKV: 5a07930c70c70b86cd87761a42c8f3836fb681d7
+  MMKVCore: e50135dbd33235b6ab390635991bab437ab873c0
+  mmkvflutter: a321a78260e9c370a4c79b02c35bfb58c0e18592
+  path_provider_foundation: 29f094ae23ebbca9d3d0cec13889cd9060c0e943
+  RxCocoa: 44a80de90e25b739b5aeaae3c8c371a32e3343cc
+  RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6
+  RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  url_launcher_ios: 08a3dfac5fb39e8759aeb0abbd5d9480f30fc8b4
 
-PODFILE CHECKSUM: 534fde36adb8c24cd433d85d11266e1fd8c057f5
+PODFILE CHECKSUM: 08f2c312f01892ebc88d46d031eb6cc14a3822f4
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.13.0

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BQk-ML-z9Q">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BQk-ML-z9Q">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,8 +16,8 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Custom Handling in UIWebView &amp; WKWebView" id="YfT-B0-LU0"/>
                 </viewController>
@@ -44,5 +43,61 @@
             </objects>
             <point key="canvasLocation" x="-238" y="133"/>
         </scene>
+        <!--Host View Controller-->
+        <scene sceneID="TeT-aa-flH">
+            <objects>
+                <viewController storyboardIdentifier="NativeViewCount" id="8cH-s1-0lc" customClass="HostViewController" customModule="KRWebView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZMn-lk-5OV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fqk-pW-0uE">
+                                <rect key="frame" x="166.5" y="304" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RW1-De-jn6">
+                                <rect key="frame" x="47" y="429" width="53" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="add"/>
+                                <connections>
+                                    <action selector="add:" destination="8cH-s1-0lc" eventType="touchUpInside" id="2ZG-C4-T6v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3u5-z3-0X2">
+                                <rect key="frame" x="251" y="429" width="57" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="next"/>
+                                <connections>
+                                    <action selector="next:" destination="8cH-s1-0lc" eventType="touchUpInside" id="rvz-Ck-XkT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ETA-1d-WnO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ETA-1d-WnO" firstAttribute="trailing" secondItem="3u5-z3-0X2" secondAttribute="trailing" constant="67" id="2B8-Ic-74a"/>
+                            <constraint firstItem="3u5-z3-0X2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="RW1-De-jn6" secondAttribute="trailing" constant="8" symbolic="YES" id="5tu-JG-m7c"/>
+                            <constraint firstItem="RW1-De-jn6" firstAttribute="leading" secondItem="ETA-1d-WnO" secondAttribute="leading" constant="47" id="9fc-GY-fwp"/>
+                            <constraint firstItem="ETA-1d-WnO" firstAttribute="bottom" secondItem="RW1-De-jn6" secondAttribute="bottom" constant="203" id="NAc-UQ-xhG"/>
+                            <constraint firstItem="Fqk-pW-0uE" firstAttribute="centerY" secondItem="ETA-1d-WnO" secondAttribute="centerY" constant="-29" id="mSc-bh-tLu"/>
+                            <constraint firstItem="Fqk-pW-0uE" firstAttribute="centerX" secondItem="ZMn-lk-5OV" secondAttribute="centerX" id="z8f-oc-ofS"/>
+                            <constraint firstItem="ETA-1d-WnO" firstAttribute="bottom" secondItem="3u5-z3-0X2" secondAttribute="bottom" constant="203" id="zUy-ZP-55q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelView" destination="Fqk-pW-0uE" id="TjJ-t7-hP4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4W6-pg-3wv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-524" y="-564.46776611694156"/>
+        </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

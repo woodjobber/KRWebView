@@ -20,6 +20,7 @@ class CustomeSchemeHandler : NSObject,WKURLSchemeHandler {
 
     var imagePicker : ImagePicker!
     func webView(_ webView: WKWebView, start urlSchemeTask: WKURLSchemeTask) {
+        print(urlSchemeTask.request.url as Any)
         DispatchQueue.global().async {
             if let url = urlSchemeTask.request.url, url.scheme == Constants.customURLScheme {
                 if let queryItems = URLComponents(url: url, resolvingAgainstBaseURL: true)?.queryItems {
