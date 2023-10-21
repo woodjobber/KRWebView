@@ -13,6 +13,7 @@ import FlutterPluginRegistrant
 import Flutter
 import RxSwift
 import RxCocoa
+import flutter_boost
 
 class ViewController: UIViewController,UIWebViewDelegate {
 
@@ -66,7 +67,9 @@ class ViewController: UIViewController,UIWebViewDelegate {
     
     @objc func onTapDismissButton() {
         let delegate = (UIApplication.shared.delegate as! AppDelegate)
-        delegate.flutterEngine.viewController?.dismiss(animated: false)
+        let vc = delegate.flutterEngine.viewController as? UmbrellaController
+        vc?.dismiss(animated: false)
+//        vc?.destroyFlutterApp()
     }
     
     @objc func showFlutter() {
@@ -79,7 +82,6 @@ class ViewController: UIViewController,UIWebViewDelegate {
         flutterViewController.modalPresentationStyle = .overFullScreen
         flutterViewController.modalTransitionStyle = .coverVertical
         flutterViewController.view.addSubview(self.dismissPageButton)
-
         present(flutterViewController, animated: false)
         
         flutterViewController.rx.methodInvoked(#selector(FlutterViewController.dismiss(animated:completion:))).subscribe { [weak self] _ in
@@ -119,7 +121,7 @@ extension WKWebView {
    
 }
 
-class UmbrellaController: FlutterViewController {
+class UmbrellaController: Flutter.FlutterViewController {
     
     private var channel: FlutterMethodChannel?
     
@@ -135,10 +137,9 @@ class UmbrellaController: FlutterViewController {
         let delegate = (UIApplication.shared.delegate as! AppDelegate)
         self.initialRoute = initialRoute
         
-        let newEngine = delegate.flutterEngine
-//        newEngine.viewController = nil
+        let newEngine = delegate.flutterEngine!
+//        super.init(engine: newEngine, nibName: nil, bundle: nil)
         super.init(engine: newEngine, nibName: nil, bundle: nil)
-    
         channel = FlutterMethodChannel(name: "io.flutter.update.entrypoint", binaryMessenger: newEngine.binaryMessenger)
         
     }
@@ -156,10 +157,14 @@ class UmbrellaController: FlutterViewController {
         super.viewDidLayoutSubviews()
         runOnce();
     }
+    
+    func destroyFlutterApp() {
+        channel?.invokeMethod("destroy.flutter.app", arguments: "destroy.flutter.app")
+    }
     deinit {
         print("UmbrellaController deinit...")
+        channel?.invokeMethod("destroy.flutter.app", arguments: "destroy.flutter.app")
         let delegate = (UIApplication.shared.delegate as! AppDelegate)
-        channel?.invokeMethod("dispose", arguments: "")
         delegate.flutterEngine.viewController = nil
     }
 }

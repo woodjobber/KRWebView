@@ -9,19 +9,25 @@
 import UIKit
 import FlutterPluginRegistrant
 import Flutter
+import flutter_boost
 
 @UIApplicationMain
 class AppDelegate: FlutterAppDelegate {
     
     var engines = FlutterEngineGroup(name: "multipe-flutter", project: nil)
     
-    var flutterEngine: FlutterEngine = FlutterEngine(name: "io.fullter.engine")
-
+//    var flutterEngine: FlutterEngine = FlutterEngine(name: "io.fullter.engine")
+    var flutterEngine: FlutterEngine!
+    
     override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
-        self.flutterEngine.run(withEntrypoint: nil,initialRoute: "/");
-        GeneratedPluginRegistrant.register(with: self.flutterEngine)
+        // 创建代理，做初始化操作
+        let delegate = BoostDelegate()
+        FlutterBoost.instance().setup(application, delegate: delegate, callback: { eng in
+            self.flutterEngine = eng
+        })
         
+//        self.flutterEngine.run(withEntrypoint: nil, initialRoute: "splash");
+//        GeneratedPluginRegistrant.register(with: self.flutterEngine)
          _ = Once.token
         URLProtocol.registerClass(CustomNSURLProtocol.self)
         return true
