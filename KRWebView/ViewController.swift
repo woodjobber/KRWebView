@@ -21,6 +21,10 @@ class ViewController: UIViewController,UIWebViewDelegate {
     var wkWebView : WKWebView?
     let disposeBag = DisposeBag()
    
+    @IBOutlet weak var ipTextField: UITextField!
+    
+    @IBOutlet weak var portTextField: UITextField!
+    
     override func loadView() {
         super.loadView()
         if #available(iOS 11.0, *) {
@@ -31,11 +35,15 @@ class ViewController: UIViewController,UIWebViewDelegate {
                 configuration.setURLSchemeHandler(CustomeSchemeHandler(), forURLScheme: Constants.customURLScheme)
             }
     
-            wkWebView = WKWebView(frame: .zero,configuration:configuration)
-            view = wkWebView
+            wkWebView = WKWebView(frame: view.bounds,configuration:configuration)
+//            view = wkWebView
+            view.addSubview(wkWebView!)
+            view.bringSubview(toFront: ipTextField)
+            view.bringSubview(toFront: portTextField)
         }else{
-            webview = UIWebView(frame: .zero)
-            view = webview
+            webview = UIWebView(frame: view.bounds)
+//            view = webview
+            view.addSubview(wkWebView!)
         }
     }
 
@@ -79,6 +87,9 @@ class ViewController: UIViewController,UIWebViewDelegate {
 //        return
         
         let flutterViewController = UmbrellaController(withInitialRoute: initialRoute)
+        flutterViewController.ip = ipTextField.text
+        flutterViewController.port = portTextField.text
+        
         flutterViewController.modalPresentationStyle = .overFullScreen
         flutterViewController.modalTransitionStyle = .coverVertical
         flutterViewController.view.addSubview(self.dismissPageButton)
@@ -133,6 +144,9 @@ class UmbrellaController: Flutter.FlutterViewController {
         return {}
     }()
     
+    var ip: String?
+    var port: String?
+    
     init(withInitialRoute initialRoute: String?) {
         let delegate = (UIApplication.shared.delegate as! AppDelegate)
         self.initialRoute = initialRoute
@@ -150,6 +164,11 @@ class UmbrellaController: Flutter.FlutterViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let ip = self.ip ?? ""
+        let port = self.port ?? ""
+        if(!ip.isEmpty && !port.isEmpty) {
+            channel?.invokeMethod("proxy", arguments: ["ip":ip,"port":port])
+        }
         runOnce();
     }
     
