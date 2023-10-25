@@ -169,6 +169,9 @@ class UmbrellaController: Flutter.FlutterViewController {
         if(!ip.isEmpty && !port.isEmpty) {
             channel?.invokeMethod("proxy", arguments: ["ip":ip,"port":port])
         }
+        channel?.setMethodCallHandler({[weak self] call, result in
+            self?.dismiss(animated: false);
+        })
         runOnce();
     }
     
